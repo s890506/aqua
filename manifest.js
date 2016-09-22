@@ -39,14 +39,14 @@ const manifest = {
         {
             plugin: 'hapi-auth-cookie'
         },
-        {
-            plugin: {
-                register: 'crumb',
-                options: {
-                    restful: true
-                }
-            }
-        },
+        // {
+        //     plugin: {
+        //         register: 'crumb',
+        //         options: {
+        //             restful: false
+        //         }
+        //     }
+        // },
         {
             plugin: 'inert'
         },
@@ -75,7 +75,8 @@ const manifest = {
                         AuthAttempt: './server/models/auth-attempt',
                         Session: './server/models/session',
                         Status: './server/models/status',
-                        User: './server/models/user'
+                        User: './server/models/user',
+                        Posts: './server/models/post'
                     },
                     autoIndex: Config.get('/hapiMongoModels/autoIndex')
                 }
@@ -155,6 +156,12 @@ const manifest = {
         },
         {
             plugin: './server/api/users',
+            options: {
+                routes: { prefix: '/api' }
+            }
+        },
+        {
+            plugin: './server/api/post',
             options: {
                 routes: { prefix: '/api' }
             }
