@@ -44,6 +44,7 @@ Async.auto({
         const Session = require('./server/models/session');
         const Status = require('./server/models/status');
         const User = require('./server/models/user');
+        const Posts = require('./server/models/post');
 
         Async.auto({
             connect: function (done) {
