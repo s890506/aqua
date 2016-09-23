@@ -167,6 +167,12 @@ const manifest = {
             }
         },
         {
+            plugin: './server/api/extractor',
+            options: {
+                routes: { prefix: '/api' }
+            }
+        },
+        {
             plugin: './server/web/about'
         },
         {

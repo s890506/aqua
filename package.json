@@ -33,6 +33,7 @@
     "hoek": "4.x.x",
     "inert": "4.x.x",
     "joi": "9.x.x",
+    "keyword-extractor": "0.0.13",
     "mongo-models": "1.x.x",
     "mongodb": "2.x.x",
     "node-uuid": "1.4.7",
