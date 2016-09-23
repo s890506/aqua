@@ -1,8 +1,10 @@
 # Aqua 開發教學
 
 ## 背景知識
+* [hapi framework](http://hapijs.com/tutorials)
 * [mongo-models API 說明文件](https://github.com/jedireza/mongo-models/blob/master/API.md#findoneandupdatefilter-options-callback)
 * [Async 使用範例](https://github.com/bsspirit/async_demo)
+* [MongoDB](https://www.mongodb.com/)
 
 ## 新增 API
 
